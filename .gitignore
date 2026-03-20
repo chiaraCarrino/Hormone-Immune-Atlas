@@ -1,0 +1,14 @@
+# Large data files — too large for GitHub
+*.tsv
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
