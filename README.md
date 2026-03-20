@@ -20,6 +20,23 @@ Immunotherapy works by reactivating the immune system against cancer — but it 
 
 ---
 
+## Getting Started
+
+This pipeline requires TCGA raw expression data as input.
+Raw data files are not included in this repository due to size constraints.
+
+To generate the required input files, clone and run the preprocessing pipeline first:
+
+👉 [chiaraCarrino/TCGA-preprocessing](https://github.com/chiaraCarrino/TCGA-preprocessing)
+```bash
+git clone https://github.com/chiaraCarrino/TCGA-preprocessing.git
+cd TCGA-preprocessing
+pip install -r requirements.txt
+python tcga_preprocessing.py --project TCGA-LUAD --output-dir ./data
+```
+
+Once the input files are ready, copy them into this repository under `data/` and proceed with the notebooks in order.
+
 ## Data
 
 | Source | Content | Scale |
@@ -31,8 +48,6 @@ Immunotherapy works by reactivating the immune system against cancer — but it 
 ---
 
 ## Pipeline Overview
-
-<img src="https://github.com/chiaraCarrino/Hormone-Immune-Atlas/blob/main/images/work-in-progress-icon.jpg" alt="WORK IN PROGRESS! MORE NOTEBOOK WILL BE ADDED TO THE REPOSITORY SOON" style="width:50%; height:auto;">
 
 
 ```
